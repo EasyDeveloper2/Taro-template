@@ -1,0 +1,21 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="swiper-wrap">
+        <swiper class="swiper" bindchange="anonymousFunc0">
+            <swiper-item class="swiper-item" bindtap="anonymousFunc1">
+                <image class="image" src=""></image>
+                <image class="play__icon" src="{{MLML.image.activityDetail_play}}"></image>
+            </swiper-item>
+            <swiper-item class="swiper-item">
+                <image class="image" src=""></image>
+            </swiper-item>
+            <swiper-item class="swiper-item">
+                <image class="image" src=""></image>
+            </swiper-item>
+        </swiper>
+        <view class="dot-wrap">
+            <view class="{{activeIndex == 0 ? 'dot-active' : 'dot'}}"></view>
+            <view class="{{activeIndex == 1 ? 'dot-active' : 'dot'}}"></view>
+            <view class="{{activeIndex == 2 ? 'dot-active' : 'dot'}}"></view>
+        </view>
+    </view>
+</block>

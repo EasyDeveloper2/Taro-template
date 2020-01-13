@@ -1,0 +1,11 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="cell" bindtap="anonymousFunc0"><text class="{{anonymousState__temp}}">进行中</text>
+        <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1578646625193&di=9217d5f5099bd0bb8fe2da9cfeb1b27c&imgtype=0&src=http%3A%2F%2Fimg.haokecheng.com%2Fupimages%2F20%2F84%2F03%2FE5%2F1829A321.jpg" class="image"></image>
+        <view class="section1"><text class="section1__text1">培训</text><text class="section1__text2">2019全国美妆达人培训课程1</text><text class="section1__text3">免费</text>
+        </view>
+        <view class="section2">距离报名开始还剩
+            <count-down-tag compid="{{$compid__4}}"></count-down-tag>
+        </view>
+        <view class="section3">活动时间:2028/05/20</view>
+    </view>
+</block>

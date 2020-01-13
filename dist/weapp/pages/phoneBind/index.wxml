@@ -1,0 +1,22 @@
+<block wx:if="{{$taroCompReady}}">
+    <view id="page-phone-bind"><text class="title">美丽联盟</text>
+        <view class="section1"><text class="country">国家/地区</text><text class="country-value">中国</text>
+        </view>
+        <view class="section2">
+            <picker mode="selector" range="{{[1, 2, 3, 4, 5]}}" value="{{3}}" bindchange="anonymousFunc0">
+                <view class="left"><text class="code">+86</text>
+                    <image src="" class="arraw"></image>
+                </view>
+            </picker>
+            <view class="right">
+                <input class="input" placeholder="请输入手机号码" placeholder-class="input-placeholder" maxlength="{{11}}" type="number" bindinput="anonymousFunc1" />
+            </view>
+        </view>
+        <view class="section3">
+            <input class="input" placeholder="请输入验证码" placeholder-class="input-placeholder" bindinput="anonymousFunc2" />
+            <ml-count-down compid="{{$compid__36}}"></ml-count-down>
+        </view>
+        <button class="btn1" plain="{{true}}" style="{{anonymousState__temp}}" bindtap="anonymousFunc5">绑定手机</button>
+        <button class="btn2" plain="{{true}}" style="{{anonymousState__temp2}}" open-type="getPhoneNumber" bindgetphonenumber="onBindWxPhone">绑定微信手机</button>
+    </view>
+</block>

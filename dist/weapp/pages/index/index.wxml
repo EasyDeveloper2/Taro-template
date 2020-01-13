@@ -1,0 +1,10 @@
+<block wx:if="{{$taroCompReady}}">
+    <view id="page-index">
+        <ml-activity-cell compid="{{$compid__41}}"></ml-activity-cell>
+        <ml-activity-cell compid="{{$compid__42}}"></ml-activity-cell>
+        <ml-activity-cell compid="{{$compid__43}}"></ml-activity-cell>
+        <view class="loadmore">
+            <ml-load-more compid="{{$compid__44}}"></ml-load-more>
+        </view>
+    </view>
+</block>

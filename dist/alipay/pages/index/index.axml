@@ -1,0 +1,7 @@
+<block a:if="{{$taroCompReady}}">
+    <view class="page">
+        <activity-cell></activity-cell>
+        <activity-cell></activity-cell>
+        <activity-cell></activity-cell>
+    </view>
+</block>

@@ -1,0 +1,81 @@
+@import "../../app.scss";
+.order-cell{
+    width: 710px;
+    height: 316px;
+    background-color: white;
+    border-radius: 24px;
+    .top{
+        height: 78px;
+        display: flex;
+        align-items: center;
+        border-bottom: 4px solid #F8F8F8;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+        .text1{
+           flex:1;
+           font-size: 24px;
+           color: $color5;
+        }
+        .text2{
+            font-size: 28px;
+            color: $color2;
+        }
+    }
+    .bottom{
+         padding: 18px 20px 40px 20px;
+         display: flex;
+        .image{
+            margin-top: 6px;
+            width:246px;
+            height:170px;
+            background-color: $color-placeholder;
+        }
+        .right{
+            margin-left: 36px;
+            display: flex;
+            flex-direction: column;
+            .title{
+              font-size: 28px;
+              font-weight: bold;
+              height: 72px;
+              max-height: 72px;
+            }
+            .right-bottom{
+                display: flex;
+                align-items: center;
+                .tag{
+                   width: 78px;
+                   height: 36px;
+                   line-height: 36px;
+                   border-radius: 4px;
+                   background-color: #F2C99B;
+                   text-align: center;
+                   font-size: 24px;
+                   font-weight: bold;
+                }
+                .price{
+                   font-size: 28px;
+                   color: $color3;
+                   font-weight: bold; 
+                   flex: 1;
+                   text-align: right;   
+                   height: 36px;
+                   line-height: 36px; 
+                }
+                .btn-pay{
+                    width: 152px;
+                    height: 48px;
+                    line-height: 48px;
+                    border-radius: 12px;
+                    color: $color3;
+                    border: 1Px solid $color3;
+                    text-align: center;
+                    margin-left: 38px;
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+
+}

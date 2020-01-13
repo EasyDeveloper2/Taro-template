@@ -1,0 +1,24 @@
+<block wx:if="{{$taroCompReady}}">
+    <view id="page-edit-user-info">
+        <view class="avatar-wrap">
+            <image class="icon" src=""></image><text class="name">更改用户头像</text>
+        </view>
+        <view class="cell"><text class="title">昵称</text>
+            <input class="value" placeholder="请输入用户昵称" />
+        </view>
+        <picker mode="date" value="2020-1-1" bindchange="anonymousFunc0">
+            <view class="cell"><text class="title">生日</text><text class="value">去选择</text>
+                <image class="arraw" src="{{MLML.image.common_arraw_right}}"></image>
+            </view>
+        </picker>
+        <picker mode="selector" range="{{['男', '女']}}" value="{{0}}" bindchange="anonymousFunc1">
+            <view class="cell"><text class="title">性别</text><text class="value">去选择</text>
+                <image class="arraw" src="{{MLML.image.common_arraw_right}}"></image>
+            </view>
+        </picker>
+        <view class="cell" bindtap="anonymousFunc2"><text class="title">绑定手机号码</text><text class="value">去绑定</text>
+            <image class="arraw" src="{{MLML.image.common_arraw_right}}"></image>
+        </view>
+        <button class="btn-submit" bindtap="onSubmit">保存</button>
+    </view>
+</block>

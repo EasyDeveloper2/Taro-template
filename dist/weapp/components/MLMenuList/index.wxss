@@ -1,0 +1,63 @@
+@charset "UTF-8";
+.page {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+/**文字只显示单行*/
+.ml-text-clamp1 {
+  line-clamp: 1;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: normal;
+  display: -webkit-box; }
+
+/**文字只显示两行*/
+.ml-text-clamp2 {
+  line-clamp: 2;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: normal;
+  display: -webkit-box; }
+
+.ms-menu-list {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .ms-menu-list .item {
+    position: relative; }
+    .ms-menu-list .item .title {
+      font-size: 28rpx;
+      color: #888888;
+      font-weight: 500; }
+    .ms-menu-list .item .title--active {
+      color: #98142F;
+      font-size: 32rpx; }
+    .ms-menu-list .item .item-icon {
+      position: absolute;
+      bottom: -28rpx;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      width: 28rpx;
+      height: 28rpx; }
+

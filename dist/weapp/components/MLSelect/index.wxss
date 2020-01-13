@@ -1,0 +1,33 @@
+.select-wrap {
+  height: 96rpx;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .select-wrap .text1 {
+    margin-left: 18rpx;
+    color: #98142F;
+    font-size: 20rpx; }
+  .select-wrap .text2 {
+    margin-left: 12rpx;
+    color: #444444;
+    font-size: 32rpx; }
+  .select-wrap .value {
+    margin-right: 16rpx;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    color: #888888;
+    font-size: 32rpx;
+    text-align: right; }
+  .select-wrap .arraw-right {
+    margin-right: 40rpx;
+    width: 14rpx;
+    height: 26rpx; }
+
+.select-wrap-line {
+  border-bottom: 1rpx solid #F2F2F2; }
+

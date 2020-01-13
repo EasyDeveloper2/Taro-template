@@ -1,0 +1,11 @@
+<block wx:if="{{$taroCompReady}}">
+    <view id="page-order">
+        <view class="menu-wrap">
+            <ml-menu-list compid="{{$compid__22}}"></ml-menu-list>
+        </view>
+        <view class="cell" wx:for="{{loopArray0}}" wx:for-item="item" wx:for-index="__index1">
+            <ml-order-cell wx:key="$original" compid="{{item.$compid__21}}"></ml-order-cell>
+        </view>
+        <ml-load-more compid="{{$compid__23}}"></ml-load-more>
+    </view>
+</block>

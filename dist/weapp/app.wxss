@@ -1,0 +1,29 @@
+@charset "UTF-8";
+.page {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+/**文字只显示单行*/
+.ml-text-clamp1 {
+  line-clamp: 1;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: normal;
+  display: -webkit-box; }
+
+/**文字只显示两行*/
+.ml-text-clamp2 {
+  line-clamp: 2;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: normal;
+  display: -webkit-box; }
+

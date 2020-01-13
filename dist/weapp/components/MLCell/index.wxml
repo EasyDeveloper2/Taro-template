@@ -1,0 +1,9 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="{{'ml-cell-wrap ' + (showBottomLine ? 'ml-cell-wrap-line' : '')}}"><text class="text1">{{isMust ? '*' : ' '}}</text><text class="text2">{{title}}</text><text class="input" style="{{anonymousState__temp}}">{{value}}</text>
+        <block wx:if="{{showRightIcon && rightIconSrc}}">
+            <view catchtap="anonymousFunc0">
+                <image class="image" src="{{rightIconSrc}}"></image>
+            </view>
+        </block>
+    </view>
+</block>

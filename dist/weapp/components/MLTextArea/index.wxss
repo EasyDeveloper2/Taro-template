@@ -1,0 +1,32 @@
+.input-wrap {
+  margin-top: 26rpx;
+  background-color: #F8F8F8;
+  position: relative;
+  height: 162rpx;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .input-wrap .textarea {
+    margin-top: 20rpx;
+    margin-right: 28rpx;
+    margin-left: 28rpx;
+    width: calc(100% - 40rpx);
+    height: 150rpx;
+    margin-bottom: 64;
+    color: #888888;
+    background-color: #F8F8F8;
+    border: none;
+    font-size: 24rpx;
+    outline: none; }
+  .input-wrap .number {
+    position: absolute;
+    bottom: 6rpx;
+    right: 12rpx;
+    font-size: 24rpx;
+    color: #888888; }
+

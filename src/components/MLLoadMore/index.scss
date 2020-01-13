@@ -1,0 +1,27 @@
+#loadmore{
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .loadmore-icon{
+    width: 30px;
+    height: 30px;
+    animation: infinite 2s rotate linear;
+  }
+  .title{
+    margin-left: 10px;
+    font-size: 24px;
+    color: #999;
+  }
+  
+  @keyframes rotate{
+    0%{
+      transform: rotateZ(0);
+    }
+    100%{
+      transform: rotateZ(360deg);
+    }
+  }

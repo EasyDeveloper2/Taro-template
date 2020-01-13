@@ -1,0 +1,43 @@
+<template name="renderMoreItems">
+    <block>
+        <block>
+            <ml-cell compid="{{$compid__6}}"></ml-cell>
+            <ml-cell compid="{{$compid__7}}"></ml-cell>
+            <ml-cell compid="{{$compid__8}}"></ml-cell>
+            <ml-cell compid="{{$compid__9}}"></ml-cell>
+        </block>
+    </block>
+</template>
+<block wx:if="{{$taroCompReady}}">
+    <view id="page-order-detail">
+        <view class="count-down">
+            <ml-count-down-tag compid="{{$compid__10}}"></ml-count-down-tag><text style="{{anonymousState__temp2}}"> 后订单自动取消,请尽快支付</text>
+        </view>
+        <ml-order-cell compid="{{$compid__11}}"></ml-order-cell>
+        <view class="list">
+            <ml-cell compid="{{$compid__12}}"></ml-cell>
+            <ml-cell compid="{{$compid__13}}"></ml-cell>
+            <ml-cell compid="{{$compid__14}}"></ml-cell>
+            <ml-cell compid="{{$compid__15}}"></ml-cell>
+            <block wx:if="{{!fold}}">
+                <template is="renderMoreItems" data="{{...anonymousState__temp}}"></template>
+            </block>
+            <view class="folding" bindtap="anonymousFunc1">
+                <image src="{{fold ? MLML.image.folding_open : MLML.image.folding_close}}" class="folding-icon"></image>
+            </view>
+        </view>
+        <view class="list">
+            <ml-cell compid="{{$compid__16}}"></ml-cell>
+            <ml-cell compid="{{$compid__17}}"></ml-cell>
+        </view>
+        <view class="list">
+            <ml-cell compid="{{$compid__18}}"></ml-cell>
+            <ml-cell compid="{{$compid__19}}"></ml-cell>
+            <ml-cell compid="{{$compid__20}}"></ml-cell>
+            <view class="footer">
+                <view class="btn" bindtap="onPay">去支付</view>
+                <view class="btn" bindtap="onCancleOrder">取消订单</view>
+            </view>
+        </view>
+    </view>
+</block>

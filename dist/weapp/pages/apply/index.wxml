@@ -1,0 +1,34 @@
+<template name="renderMoreItems">
+    <block>
+        <block>
+            <ml-select compid="{{$compid__24}}"></ml-select>
+            <ml-input compid="{{$compid__25}}"></ml-input>
+            <ml-input compid="{{$compid__26}}"></ml-input>
+            <ml-input compid="{{$compid__27}}"></ml-input>
+        </block>
+    </block>
+</template>
+<block wx:if="{{$taroCompReady}}">
+    <view id="page-apply">
+        <view class="header">
+            <image src="" class="image"></image>
+            <view class="right">
+                <view class="title ml-text-clamp1">2019全国美妆达人培训课程火 热来袭！</view>
+                <view class="bottom">
+                    <view class="text1">培训</view>
+                    <view style="{{anonymousState__temp2}}"></view><text class="text2">免费</text>
+                </view>
+            </view>
+        </view>
+        <view class="list">
+            <ml-input compid="{{$compid__28}}"></ml-input>
+            <ml-input compid="{{$compid__29}}"></ml-input>
+            <ml-input compid="{{$compid__30}}"></ml-input>
+            <ml-select compid="{{$compid__31}}"></ml-select>
+            <block wx:if="{{profession === '网店工作人员'}}">
+                <template is="renderMoreItems" data="{{...anonymousState__temp}}"></template>
+            </block>
+        </view>
+        <view class="btn-submit" bindtap="anonymousFunc8">提交审核</view>
+    </view>
+</block>

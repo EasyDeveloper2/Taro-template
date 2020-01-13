@@ -1,0 +1,5 @@
+<block wx:if="{{$taroCompReady}}">
+    <view id="input-wrap" class="{{showBottomLine ? 'input-wrap-line' : ''}}"><text class="text1">{{isMust ? '*' : ' '}}</text><text class="text2">{{title}}</text>
+        <input class="input" disabled="{{disabled}}" value="{{value}}" placeholder="{{placeholder}}" />
+    </view>
+</block>

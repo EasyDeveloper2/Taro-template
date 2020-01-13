@@ -1,0 +1,77 @@
+.cell {
+  margin-top: 48rpx;
+  -webkit-box-shadow: 0 3rpx 11rpx 0 rgba(153, 153, 153, 0.15);
+          box-shadow: 0 3rpx 11rpx 0 rgba(153, 153, 153, 0.15);
+  border-radius: 24rpx;
+  overflow: hidden;
+  padding-bottom: 10rpx;
+  position: relative; }
+  .cell .image {
+    width: 670rpx;
+    height: 320rpx;
+    background: #f7f7f7; }
+  .cell .section1 {
+    margin-top: 8rpx;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .cell .section1 .section1__text1 {
+    margin-left: 20rpx;
+    width: 80rpx;
+    height: 36rpx;
+    font-size: 24rpx;
+    text-align: center;
+    line-height: 36rpx;
+    color: #000;
+    background: #F2C99B;
+    border-radius: 4rpx; }
+  .cell .section1 .section1__text2 {
+    margin-left: 16rpx;
+    font-size: 24rpx;
+    color: #444444;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+  .cell .section1 .section1__text3 {
+    font-size: 32rpx;
+    color: #98142F;
+    margin-right: 16rpx; }
+  .cell .section2 {
+    margin-top: 10rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    font-size: 20rpx;
+    color: #999999; }
+  .cell .section3 {
+    margin-top: 10rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    font-size: 20rpx;
+    color: #999999; }
+  .cell .statusText {
+    position: absolute;
+    top: 0;
+    right: 20rpx;
+    width: 116rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+    border-bottom-left-radius: 12rpx;
+    border-bottom-right-radius: 12rpx;
+    font-size: 28rpx; }
+  .cell .statusText--going {
+    background: #98142F;
+    color: white; }
+  .cell .statusText--finish {
+    background: #EAEAEA;
+    color: #999; }
+  .cell .statusText--unstart {
+    background: #1B1B1B;
+    color: white; }
+

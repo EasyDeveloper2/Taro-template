@@ -1,0 +1,7 @@
+<block wx:if="{{$taroCompReady}}">
+    <view id="loadmore">
+        <block wx:if="{{!noMore}}">
+            <image class="loadmore-icon" src="{{MLML.image.common_loading}}"></image>
+        </block><text class="title">{{noMore ? noText : text}}</text>
+    </view>
+</block>

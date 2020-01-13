@@ -1,0 +1,35 @@
+<block a:if="{{$taroCompReady}}">
+    <view class="me">
+        <view class="avatar">
+            <image class="icon" src=""></image>
+            <image class="edit" src=""></image>
+        </view><text class="username">小仙女铲屎官</text>
+        <view class="section1">
+            <view class="top"><text class="text">全部订单</text>
+                <image class="icon" src=""></image>
+            </view>
+            <view class="list">
+                <view class="item">
+                    <image class="icon" src=""></image><text class="text">待审核</text>
+                </view>
+                <view class="item">
+                    <image class="icon" src=""></image><text class="text">待付款</text>
+                </view>
+                <view class="item">
+                    <image class="icon" src=""></image><text class="text">报名成功</text>
+                </view>
+                <view class="item">
+                    <image class="icon" src=""></image><text class="text">不通过</text>
+                </view>
+            </view>
+        </view>
+        <view class="box2">
+            <view class="cell" hover-class="box-view-hover"><text class="text">关于我们</text>
+                <image class="image" src=""></image>
+            </view>
+            <view class="cell" hover-class="box-view-hover"><text class="text">意见反馈</text>
+                <image class="image" src=""></image>
+            </view>
+        </view>
+    </view>
+</block>

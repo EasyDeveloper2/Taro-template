@@ -1,0 +1,9 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="ms-menu-list">
+        <view class="item" wx:key="$original" bindtap="anonymousFunc0" wx:for="{{loopArray4}}" wx:for-item="item" wx:for-index="index" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey}}"><text class="{{'title ' + (activeIndex == index ? 'title--active' : '')}}">{{item.$original}}</text>
+            <block wx:if="{{activeIndex == index}}">
+                <image class="item-icon" src="{{MLML.image.common_ellipse}}"></image>
+            </block>
+        </view>
+    </view>
+</block>

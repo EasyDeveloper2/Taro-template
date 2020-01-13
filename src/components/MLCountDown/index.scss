@@ -1,0 +1,28 @@
+
+@import "../../app.scss";
+.btn {
+    width:200px;
+    height:112px;
+    line-height: 112px;
+    text-align: center;
+    align-items: 'center';
+    justify-content:'center';
+    background-color:$bgColor-btn-active;
+    .text{
+      color: #fff;
+    }
+  
+}
+.btnInvalid{
+    width:200px;
+    height:112px;
+    line-height: 112px;
+    text-align: center;
+    align-items: 'center';
+    justify-content:'center';
+    background-color:$bgColor-btn-invalid;
+    .text{
+        color: $color-btn-active;
+    }
+}
+

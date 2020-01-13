@@ -1,0 +1,16 @@
+#page-index {
+  width: 100vw;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.loadmore {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx; }
+

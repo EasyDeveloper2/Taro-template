@@ -1,0 +1,2 @@
+<block wx:if="{{$taroCompReady}}"><text>{{display}}</text>
+</block>

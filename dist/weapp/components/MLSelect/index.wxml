@@ -1,0 +1,7 @@
+<block wx:if="{{$taroCompReady}}">
+    <picker mode="selector" range="{{range}}" value="{{index}}" range-key="{{rangeKey}}" bindchange="anonymousFunc0">
+        <view class="{{'select-wrap ' + (showBottomLine ? 'select-wrap-line' : '')}}"><text class="text1">{{isMust ? '*' : ' '}}</text><text class="text2">{{title}}</text><text class="value">{{value ? value : placeholder}}</text>
+            <image class="arraw-right" src="{{MLML.image.common_arraw_right}}"></image>
+        </view>
+    </picker>
+</block>

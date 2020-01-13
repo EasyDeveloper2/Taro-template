@@ -1,0 +1,18 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="order-cell" bindtap="funPrivatebzzzz">
+        <view class="top"><text class="text1">2019-12-24 13:14:15</text><text class="text2">待审核</text>
+        </view>
+        <view class="bottom">
+            <image class="image" src=""></image>
+            <view class="right"><text class="title">2019全国美妆达人培训课程火热 来袭！</text>
+                <view style="{{anonymousState__temp}}"></view>
+                <view class="right-bottom">
+                    <view class="tag">培训</view><text class="price">免费</text>
+                    <block wx:if="{{showPayButton}}">
+                        <view class="btn-pay" catchtap="anonymousFunc0">去支付</view>
+                    </block>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

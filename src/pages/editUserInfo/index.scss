@@ -1,0 +1,67 @@
+@import "../../app.scss";
+#page-edit-user-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    .avatar-wrap{
+        margin-top: 42px;
+        margin-bottom: 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .icon{
+          width: 136px;
+          height: 136px;
+          border-radius: 68px;
+          background-color: $color6;
+        }
+        .name{
+          margin-top: 28px;
+          color: #888888;
+          font-size: 32px;
+        }
+    }
+    .cell{
+        margin-top: 12px;
+        width: 670px;
+        display: flex;
+        align-items: center;
+        padding-left: 34px;
+        padding-right: 50px;
+        font-size: 32px;
+        height: 88px;
+        border-bottom: 1Px solid $color-line;
+        box-sizing: border-box;
+        .title{
+          color: $color1;
+        }
+        .value{
+          flex:1;
+          color: $color2;
+          text-align: right;
+        }
+        .arraw{
+           width: 14px;
+           height: 26px;
+           margin-left: 18px;
+        }
+    }
+    .btn-submit{
+      position: absolute;
+      bottom: 88px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 368px;
+      height: 80px;
+      text-align: center;
+      line-height: 80px;
+      border-radius: 12px;
+      font-size: 34px;
+      color: #FFFFFF;
+      font-weight: 500;
+      background: $bgColor-btn-active;
+      margin-bottom: 88px;
+  }
+}

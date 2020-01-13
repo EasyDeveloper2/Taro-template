@@ -1,0 +1,108 @@
+@charset "UTF-8";
+.page {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+/**文字只显示单行*/
+.ml-text-clamp1 {
+  line-clamp: 1;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: normal;
+  display: -webkit-box; }
+
+/**文字只显示两行*/
+.ml-text-clamp2 {
+  line-clamp: 2;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: normal;
+  display: -webkit-box; }
+
+#page-edit-user-info {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  position: relative; }
+  #page-edit-user-info .avatar-wrap {
+    margin-top: 42rpx;
+    margin-bottom: 48rpx;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    #page-edit-user-info .avatar-wrap .icon {
+      width: 136rpx;
+      height: 136rpx;
+      border-radius: 68rpx;
+      background-color: #F8F8F8; }
+    #page-edit-user-info .avatar-wrap .name {
+      margin-top: 28rpx;
+      color: #888888;
+      font-size: 32rpx; }
+  #page-edit-user-info .cell {
+    margin-top: 12rpx;
+    width: 670rpx;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 34rpx;
+    padding-right: 50rpx;
+    font-size: 32rpx;
+    height: 88rpx;
+    border-bottom: 1Px solid #e5e5e5;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    #page-edit-user-info .cell .title {
+      color: #444444; }
+    #page-edit-user-info .cell .value {
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      color: #888888;
+      text-align: right; }
+    #page-edit-user-info .cell .arraw {
+      width: 14rpx;
+      height: 26rpx;
+      margin-left: 18rpx; }
+  #page-edit-user-info .btn-submit {
+    position: absolute;
+    bottom: 88rpx;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 368rpx;
+    height: 80rpx;
+    text-align: center;
+    line-height: 80rpx;
+    border-radius: 12rpx;
+    font-size: 34rpx;
+    color: #FFFFFF;
+    font-weight: 500;
+    background: #98142F;
+    margin-bottom: 88rpx; }
+

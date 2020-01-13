@@ -1,0 +1,5 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="input-wrap">
+        <textarea class="textarea" placeholder="{{placeholder}}" value="{{defaultValue ? defaultValue : ''}}" bindinput="anonymousFunc0" maxlength="{{maxLength}}"></textarea><text class="number">{{value.length}}/{{maxLength}}</text>
+    </view>
+</block>

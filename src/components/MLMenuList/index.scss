@@ -1,0 +1,30 @@
+@import "../../app.scss";
+.ms-menu-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    flex-direction: row;
+    .item{
+        position: relative;
+        .title{
+          font-size: 28px;
+          color: #888888;
+          font-weight: 500;
+        }
+        .title--active{
+            color: $color-btn-active;
+            font-size: 32px;
+        }
+        .item-icon{
+          position: absolute;
+          bottom: -28px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 28px;
+          height: 28px;
+        }
+    }
+}

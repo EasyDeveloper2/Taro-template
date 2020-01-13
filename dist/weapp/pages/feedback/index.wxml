@@ -1,0 +1,15 @@
+<block wx:if="{{$taroCompReady}}">
+    <view id="page-feedback">
+        <view class="content">
+            <view class="top"><text class="text1">手机号</text>
+                <input class="text2" placeholder="请输入" maxlength="{{11}}" type="number" />
+            </view>
+            <view class="bottom"><text class="title">问题反馈</text>
+            </view>
+            <view class="text-area">
+                <ml-text-area compid="{{$compid__5}}"></ml-text-area>
+            </view>
+            <button class="btn" plain="{{true}}" style="{{anonymousState__temp}}" bindtap="onSubmit">提交</button>
+        </view>
+    </view>
+</block>

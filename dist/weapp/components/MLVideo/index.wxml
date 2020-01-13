@@ -1,0 +1,5 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="ml-video" bindtap="funPrivateizzzz">
+        <video class="video" src="{{src}}" catchtap="anonymousFunc0"></video>
+    </view>
+</block>

@@ -1,0 +1,39 @@
+$color1:#444444;
+$color2:#888888;
+$color3:#98142F;
+$color4:#999999;
+$color5:#1B1B1B;
+$color6:#F8F8F8;
+
+$color-line:#e5e5e5;
+$color-placeholder:#b2b2b2;
+$color-invalid:#F8F8F8;
+$color-btn-active:#98142F;
+$bgColor-btn-invalid:#F8F8F8;
+$bgColor-btn-active:#98142F;
+
+
+.page{
+    display: flex;
+    flex-direction: column; 
+}
+/**文字只显示单行*/
+.ml-text-clamp1{
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+     overflow: hidden;
+     -webkit-line-clamp: 1;
+     text-overflow: ellipsis;
+     white-space: normal;
+     display: -webkit-box;
+}
+/**文字只显示两行*/
+.ml-text-clamp2{
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    white-space: normal;
+    display: -webkit-box;
+}

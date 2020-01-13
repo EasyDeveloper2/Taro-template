@@ -1,0 +1,4 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="{{status === 1 ? 'btnInvalid' : 'btn'}}" bindtap="anonymousFunc0"><text class="text">{{status === 1 ? duration + 's' : '获取验证码'}}</text>
+    </view>
+</block>

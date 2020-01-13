@@ -1,0 +1,9 @@
+<block a:if="{{$taroCompReady}}">
+    <view class="cell"><text class="{{anonymousState__temp}}">进行中</text>
+        <image src="" class="image"></image>
+        <view class="section1"><text class="section1__text1">培训</text><text class="section1__text2">2019全国美妆达人培训课程1</text><text class="section1__text3">免费</text>
+        </view>
+        <view class="section2">报名还剩:2天 02:11:50</view>
+        <view class="section3">活动时间:2019/05/20</view>
+    </view>
+</block>

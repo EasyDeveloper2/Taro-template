@@ -1,0 +1,46 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="me">
+        <view class="avatar" bindtap="anonymousFunc0">
+            <image class="icon" src=""></image>
+            <image class="edit" src="{{MLML.image.me_edit}}"></image>
+        </view><text class="username">小仙女铲屎官</text>
+        <view class="section1">
+            <view class="top" bindtap="anonymousFunc1"><text class="text">全部订单</text>
+                <image class="icon" src="{{MLML.image.common_arraw_right}}"></image>
+            </view>
+            <view class="list">
+                <view class="item" bindtap="anonymousFunc2">
+                    <view class="icon-wrap">
+                        <image class="icon" src="{{MLML.image.me_icon1}}"></image><text class="number">7</text>
+                    </view><text class="text">待审核</text>
+                </view>
+                <view class="item" bindtap="anonymousFunc3">
+                    <view class="icon-wrap">
+                        <image class="icon" src="{{MLML.image.me_icon2}}"></image><text class="number">7</text>
+                    </view><text class="text">待付款</text>
+                </view>
+                <view class="item" bindtap="anonymousFunc4">
+                    <view class="icon-wrap">
+                        <image class="icon" src="{{MLML.image.me_icon3}}"></image><text class="number">7</text>
+                    </view><text class="text">报名成功</text>
+                </view>
+                <view class="item" bindtap="anonymousFunc5">
+                    <view class="icon-wrap">
+                        <image class="icon" src="{{MLML.image.me_icon4}}"></image><text class="number">7</text>
+                    </view><text class="text">不通过</text>
+                </view>
+            </view>
+        </view>
+        <view class="box2">
+            <view class="cell" hover-class="box-view-hover" bindtap="anonymousFunc6"><text class="text">会员报名</text>
+                <image class="image" src="{{MLML.image.common_arraw_right}}"></image>
+            </view>
+            <view class="cell" hover-class="box-view-hover" bindtap="anonymousFunc7"><text class="text">关于我们</text>
+                <image class="image" src="{{MLML.image.common_arraw_right}}"></image>
+            </view>
+            <view class="cell" hover-class="box-view-hover" bindtap="anonymousFunc8"><text class="text">意见反馈</text>
+                <image class="image" src="{{MLML.image.common_arraw_right}}"></image>
+            </view>
+        </view>
+    </view>
+</block>

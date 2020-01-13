@@ -1,0 +1,40 @@
+<block wx:if="{{$taroCompReady}}">
+    <view id="page-activity-detail">
+        <view class="banner">
+            <banner compid="{{$compid__33}}"></banner>
+            <view class="tag"><text class="tag-text1">已报名</text><text class="tag-text2">50人</text>
+            </view>
+        </view>
+        <view class="section1">
+            <view class="top">
+                <view class="text1">培训</view><text class="text2">2019全国美妆达人培训课程</text>
+            </view>
+            <view class="mid"><text class="text1">报名还剩：</text>
+                <ml-count-down-tag compid="{{$compid__34}}"></ml-count-down-tag>
+            </view>
+            <view class="bottom"><text>活动时间：</text><text>2019-05-20至2019-07-20</text>
+            </view>
+        </view>
+        <view class="section2">
+            <view class="top">
+                <image class="icon" src="{{MLML.image.common_ellipse}}"></image><text class="title">基本信息</text>
+            </view><text class="content1">活动地址： ≤1000人</text><text class="content2">活动地址： 2019-05-20 至 2019-07</text><text class="content3">活动地址： 上海市浦东新区丹桂路899号</text>
+            <view bindtap="anonymousFunc2">
+                <image class="location" src="{{MLML.image.activityDetail_location}}"></image>
+            </view>
+        </view>
+        <view class="section3">
+            <view class="top">
+                <image class="icon" src="{{MLML.image.common_ellipse}}"></image>
+                <view class="list">
+                    <view class="{{index == menuIndex ? 'title--active' : 'title'}}" bindtap="anonymousFunc3" wx:for="{{loopArray2}}" wx:for-item="item" wx:for-index="index" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey}}">{{item.$original.title}}</view>
+                </view>
+            </view>
+            <view class="content">{{anonymousState__temp}}</view>
+        </view>
+        <view class="btn-submit" bindtap="anonymousFunc4">立即报名</view>
+        <block wx:if="{{showVideo}}">
+            <ml-video compid="{{$compid__35}}"></ml-video>
+        </block>
+    </view>
+</block>

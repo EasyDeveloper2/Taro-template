@@ -1,0 +1,10 @@
+<block wx:if="{{$taroCompReady}}">
+    <view id="page-apply-success">
+        <image class="icon-success" src="{{MLML.image.paySuccess_success}}"></image><text class="title1">提交成功,待审核</text><text class="title2">预计会在5个工作日左右完成审核,请耐心等待</text>
+        <button class="btn1" plain="{{true}}" style="{{anonymousState__temp}}" bindtap="anonymousFunc0">查看订单</button>
+        <button class="btn2" plain="{{true}}" style="{{anonymousState__temp2}}" bindtap="anonymousFunc1">回到首页</button>
+        <button class="btn3" plain="{{true}}" style="{{anonymousState__temp3}}" bindtap="anonymousFunc2">
+            <image class="icon" src="{{MLML.image.paySuccess_notice}}"></image><text class="text">消息通知我</text>
+        </button>
+    </view>
+</block>
